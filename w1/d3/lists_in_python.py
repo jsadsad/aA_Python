@@ -62,4 +62,8 @@ values = [26, "JC", "sushi"]
 # dictionary comprehension
 d = {keys[i].title(): values[i] for i in range(len(keys))}
 
+# more python way
+# this is destructuring
+d = {key: value for key, value in zip(keys, values)}
+
 print(d)
