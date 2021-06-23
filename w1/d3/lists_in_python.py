@@ -8,7 +8,7 @@ for l in lst:
 
 # print("for loop list:", new_list)
 
-# [value for-loop]
+# [value for-loop] / list comprehension
 value_list = [el for el in lst]
 
 # print("value for loop list:", value_list)
@@ -20,4 +20,14 @@ mapped_list = []
 for l in to_map_list:
     mapped_list.append(l.title())
 
-print(mapped_list)
+# print(mapped_list)
+
+# copying filter()
+
+to_filter_list = [1, 10, 11, 12, 30, 100, 90]
+
+filtered_list = [n for n in to_filter_list if n % 3 == 0]
+
+print(filtered_list)
+
+# it is second nature to write in list comprehension for python
