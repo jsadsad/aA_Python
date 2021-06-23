@@ -45,5 +45,21 @@ for l in letters:
 ## creating a tupple with list comprehension
 tupple_list_comprehension = [(n, l) for n in nums for l in letters]
 
-print(tupple_list_comprehension)
+# print(tupple_list_comprehension)
 # print(tupple_list)
+
+## dictionary comprehension
+keys = ["age", "name", "fav_food"]
+values = [26, "JC", "sushi"]
+
+# for loop
+# d = dict()
+# # d = {} # is also acceptable
+# for i in range(len(keys)):
+#     d[keys[i].title()] = values[i]
+
+
+# dictionary comprehension
+d = {keys[i].title(): values[i] for i in range(len(keys))}
+
+print(d)
